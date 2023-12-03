@@ -19,10 +19,11 @@ une page pour exposer ses prestations ainsi que la grille tarifaire de celle-ci.
 une page de contact pour qu'on puisse lui poser des questions.
 
 2.Environnement technique
-L'environnement technique imposée par l'évaluation devait être composée de: 
+
+L'environnement technique imposée par l'évaluation devait être composée de:
+
 Langages Front : HTML5, CSS3, JavaScript
 Framework : Au choix -> Exemple : Bootstrap, React.JS
-
 CMS :
  WordPress peut être utilisé si le thème a été créé à la main.
  Autrement un combo générateur de site statique (Eleventy, NextJS, etc.) + CMS headless
@@ -33,3 +34,7 @@ HTLM, CSS, JavaScript
 Bootstrap,
 Netlify
 
+3.Procédure de mise en place
+
+Cloner le fichier sur votre ordinateur avec git clon ->
+Ou consulter le site en ligne -> https://charles-cantin-portfolio-salza.netlify.app/
