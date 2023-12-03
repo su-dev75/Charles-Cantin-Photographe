@@ -36,5 +36,5 @@ Netlify
 
 3.Procédure de mise en place
 
-Cloner le fichier sur votre ordinateur avec git clon ->
+Cloner le fichier sur votre ordinateur avec git clon -> https://github.com/su-dev75/Charles-Cantin-Photographe  
 Ou consulter le site en ligne -> https://charles-cantin-portfolio-salza.netlify.app/
