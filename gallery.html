@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Link Fontawesome-->
+    <script src="https://kit.fontawesome.com/aeb8f8fb80.js" crossorigin="anonymous"></script>
+
+        <!--Link google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Charles Cantin - Galerie de photos</title>
+    <link rel="icon" href="/assets/logo.png">
+    <meta name="description" content="Parcourez les meilleures photos par catégorie!">   
+</head>
+<body>
+      <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
+      <div class="container">
+          <a class="navbar-brand " href="#">
+           <img src="assets/logo.png" alt="logo" width="80" height="80">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav m-auto">
+            <a class="nav-link px-lg-4"  href="index.html">Accueil</a>
+            <a class="nav-link px-lg-4" href="gallery.html">Galerie</a>
+            <a class="nav-link px-lg-4" href="tarifs.html">Tarifs</a>
+            <a class="nav-link px-lg-4" href="contact.html">Contact</a>
+          </div>
+          <div class="social">
+            <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <section class="photos py-5 bg-light"></section>
+        <div class="container text-center py-5">
+            <h1 class="text-center py-2 color:#47555E">Galerie</h1>
+            <div class="control">
+                <ul>
+                    <li class="btn" id="tous">Tous</li>
+                    <li class="btn" id="mariage">Mariage</li>
+                    <li class="btn" id="grossesse">Grossesse</li>
+                    <li class="btn" id="bebe">Bébé</li>
+                    <li class="btn" id="famille">Famille</li>
+                    <li class="btn" id="bapteme">Bâpteme</li>
+                    <li class="btn" id=couple>Couple</li>
+                    <li class="btn" id="portrait">Portrait</li>
+                </ul>
+            </div>
+        </div>  
+      <!--Galerie photos-->
+    <div class="col py-lg-4">
+      <div class="gallery">
+        <img src="/assets/bebe-2.jpg" data-bebe class="img-fluid active">        
+        <img src="/assets/mariage-2.jpg" data-mariage class="img-fluid active">       
+        <img src="/assets/couple.jpg" data-couple class="img-fluid active">        
+        <img src="/assets/portrait.jpg" data-portrait class="img-fluid active">        
+        <img src="/assets/grosses.jpg" data-grossesse class="img-fluid active">        
+        <img src="/assets/famille.jpg" data-famille class="img-fluid active">       
+        <img src="/assets/bapteme-1.jpg" data-bapteme class="img-fluid active">        
+        <img src="/assets/bebe.jpg" data-bebe class="img-fluid active">        
+        <img src="/assets/mariage-1.jpg" data-mariage class="img-fluid active">        
+        <img src="/assets/couple-1.jpg" data-couple class="img-fluid active">        
+        <img src="/assets/bapteme.jpg" data-bapteme class="img-fluid active">        
+        <img src="/assets/famille-1.jpg" data-famille class="img-fluid active">        
+        <img src="/assets/grossesse-1.jpg" data-grossesse class="img-fluid active">     
+        <img src="/assets/portrait-1.jpg" data-portrait class="img-fluid active">       
+        <img src="/assets/mariage.jpg" data-mariage class="img-fluid active">       
+        <img src="/assets/bapteme-2.jpg" data-bapteme class="img-fluid active">       
+        <img src="/assets/couple-2.jpg" data-couple class="img-fluid active">        
+        <img src="/assets/bebe-1.jpg" data-bebe class="img-fluid active">        
+        <img src="/assets/famille-2.jpg" data-famille class="img-fluid active">        
+        <img src="/assets/grossesse-2.jpg" data-grossesse class="img-fluid active">        
+        <img src="/assets/portrait-2.jpg" data-portrait class="img-fluid active">
+        
+         <span><i class="fa-solid fa-camera-retro fa-2xl" style="color: #47555E" data-bs-toggle="modal" data-bs-target="#portfolioModal"></i></span>
+      </div>
+  </div>
+      <div class="portfolio-modal modal fade mt-5" id="portfolioModal" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+         <div class="modal-content text-center">
+            <div class="modal-body text-center">
+               <div class="container-fluid py-3">
+                  <div class="row justify-content-center">
+                     <div class="col-lg-12">
+                        <img src="/assets/photographe-logo.png" class="img-fluid rounded" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </section>   
+     <!--Footer-->
+    <footer>
+        <div class="py-3 text-center">
+            <p>Tous droits réserves © 2023 Crée par Salza.u</p>
+        </div>
+   </footer>
+
+       <!--Lnks JS, Bootstrap-->
+      <script src="index.js"></script>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>

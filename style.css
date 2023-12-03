@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;  
+}
+
+/*Navbar*/
+
+.navbar{
+    background-color: #47555E;
+}
+.nav-link {
+    color: #EEEEEE;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: #da0037;
+}
+.social a {
+    color: #EEEEEE;
+}
+.social a:hover{
+    color: #da0037;
+}
+
+/*Acceuil*/
+
+.main{
+    background: url(./assets/charles-cantin-pfotographe.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (max-width: 600px) {
+    .main{
+        background-position:center;
+        text-align: center;
+    }
+}
+
+.main h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #EEEEEE;
+    justify-content: center;
+}
+h1 {
+    padding-top: 40%;
+}
+
+/*Galerie*/
+
+.control ul li {
+    list-style: none;
+    background-color: #47555E;
+    padding: 5px, 15px;
+    color: #EEEEEE;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.btn:hover {
+    background-color: #da0037;
+    color: #EEEEEE;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.gallery .active{
+    width: 30%;
+    padding: 5px;
+    transition: width .3s;
+}
+
+.gallery .inactive{
+    width: 0;
+    padding: 0;
+    transition: width .3s;
+}
+.text-center {
+    color:#47555E
+}
+.py-3 {
+    color: #EEEEEE;
+}
+
+
+.gallery{
+    position: relative;
+}
+
+.gallery:hover{
+    -webkit-box-shadow: -18px 3px 109px -65px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -18px 3px 109px -65px rgba(0, 0, 0, 0.75);
+    box-shadow: -18px 3px 109px -65px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+.gallery span {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+    opacity: 0;
+}
+.gallery:hover span {
+    opacity: 1;
+    transition: 0.5s;
+}
+.gallery:before {
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(238, 235, 230, 0.644);
+    opacity: 0;
+    position: absolute;
+}
+.gallery:hover:before{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/*Tarifs*/
+
+.card {
+    border: none;
+    outline: none;
+    -webkit-box-shadow: -18px 3px 109px -65px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -18px 3px 109px -65px rgba(0, 0, 0, 0.75);
+    box-shadow: -18px 3px 109px -65px rgba(0, 0, 0, 0.75);
+}
+
+@media  screen and (max-width: 500px) {
+    .col{
+        flex: auto;
+    }    
+}
+
+/*Contact*/
+
+.contact .btn1 {
+    background-color: #da0037;
+    color: #EEEEEE;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+.form-control{
+    border: 1px solid #47555E;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #47555E;
+    font-weight: 400px;
+    font-size: 20px;
+    color: #EEEEEE;
+}
