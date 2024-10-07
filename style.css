@@ -172,3 +172,7 @@ footer{
     font-size: 20px;
     color: #EEEEEE;
 }
+footer p a {
+  color: #eeeeee;
+  text-decoration: none;
+}
